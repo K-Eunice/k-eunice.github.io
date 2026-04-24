@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+
+    }
+    table {
+      display: inline-block;
+    }
+    th * {
+      vertical-align: middle;
+    }
+    td * {
+      vertical-align: middle;
+    }
+    header {
+      width: 100%;
+      text-align: center;
+      margin: 20px auto;
+    }
+    #logo {
+      height: 200px;
+    }
+    img {
+      height: 32px;
+    }
+    th, td {
+      padding: 7px;
+    }
+    input[type=checkbox] {
+      zoom: 1.5;
+    }
+    .cons {
+      height: 600px;
+      background-color: aqua;
+    }
+    .box {
+      border: 1px solid #000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+      width: 20%;
+      min-width: 300px;
+      max-width: 350px;
+      height: 100%;
+    }
+    .box h1 {
+      border: 1px solid #ff0000;
+      text-align: start;
+      width: 100%;
+    }
+    .box div {
+      width: 100%;
+      height: 300px;
+      background-color: antiquewhite;
+    }
+    .test {
+      background-color: aqua;
+      display: inline-block;
+      position: relative;
+    }
+    .container {
+      width: 100px;
+      height: 100px;
+      background-color: #ff0000;
+      position: absolute;
+
+    }
+    .light {
+      width: 100px;
+      height: 50px;
+      background-color: antiquewhite;
+      position: absolute;
+      transform: translateY(50%);
+      z-index: -1;
+      background-color: ;
+
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://stardewvalleywiki.com/mediawiki/images/6/68/Main_Logo.png" alt="logo" id="logo">
+    <div class="test">
+      <div class="container">
+        <img src="./임원실 태블릿/임원실 태블릿 - 시안 1/img/carIcon.png" alt="car">
+        <div class="text">붕붕</div>
+      </div>
+      <div class="light"></div>
+    </div>
+  </header>
+  
+  <div>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan=2">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b3/Bundle_Green.png" alt="s_pickup" class="title_img">
+            <span>봄 채집 꾸러미</span>
+            <br>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_1">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/9/90/Wild_Horseradish.png" alt="1">
+            <span>야생 고추냉이</span>
+          </td>
+          <td>봄 채집</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_2">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/4/4b/Daffodil.png" alt="1">
+            <span>수선화</span>
+          </td>
+          <td>봄 채집</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_3">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/57/Leek.png" alt="1">
+            <span>리크</span>
+          </td>
+          <td>봄 채집</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/b/b1/Dandelion.png" alt="1">
+            <span>민들레</span>
+          </td>
+          <td>봄 채집</td>
+        </tr>
+      </thead>
+    </table>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan=2">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/2/2b/Bundle_Yellow.png" alt="s_pickup" class="title_img">
+            <span>여름 채집 꾸러미</span>
+            <br>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_1">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c2/Grape.png" alt="1">
+            <span>포도</span>
+          </td>
+          <td>여름 채집</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_2">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/c/c6/Spice_Berry.png" alt="1">
+            <span>백량금</span>
+          </td>
+          <td>여름 채집</td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_3">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/d/d9/Sweet_Pea.png" alt="1">
+            <span>스위트피</span>
+          </td>
+          <td>여름 채집</td>
+        </tr>
+      </thead>
+    </table>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan=2">
+            <img src="" alt="s_pickup" class="title_img">
+            <span>꾸러미</span>
+            <br>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+      </thead>
+    </table>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan=2">
+            <img src="" alt="s_pickup" class="title_img">
+            <span>꾸러미</span>
+            <br>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+      </thead>
+    </table>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan=2">
+            <img src="" alt="s_pickup" class="title_img">
+            <span>꾸러미</span>
+            <br>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+      </thead>
+    </table>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan=2">
+            <img src="" alt="s_pickup" class="title_img">
+            <span>꾸러미</span>
+            <br>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <div>
+    <table border="1">
+      <thead>
+        <tr>
+          <th colspan=2">
+            <img src="" alt="s_pickup" class="title_img">
+            <span>꾸러미</span>
+            <br>
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+            <img src="https://stardewvalleywiki.com/mediawiki/images/5/5e/Bundle_Slot.png" alt="bundle_slot">
+          </th>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>
+            <input type="checkbox" name="checkbox" id="sp_4">
+            <img src="" alt="1">
+            <span></span>
+          </td>
+          <td></td>
+        </tr>
+      </thead>
+    </table>
+  </div>
+
+  <div class="cons">
+    <div class="box">
+      <h1>안뇽</h1>
+      <div>달력</div>
+    </div>
+  </div>
+
+  
+
+</body>
+</html>
