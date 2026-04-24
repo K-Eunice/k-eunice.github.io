@@ -1,0 +1,829 @@
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --txt: #333333;
+  --secTxt: #666666;
+  --thrTxt: #999999;
+  --lightTxt: #bbbbbb;
+  --pointColor1: #FD9CCA;
+  --pointColor1-bg: #FFF1F8;
+  --pointColor1-txt: #E966A4;
+  --pointColor2: #9C85BD;
+  --grayBg: #f4f4f4;
+  --border: #eeeeee;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: var(--txt);
+  line-height: 140%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+th,
+td {
+  font-family: "Noto Serif KR", serif;
+}
+
+img {
+  -webkit-user-drag: none;
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background-color: var(--grayBg);
+  overflow-y: hidden;
+}
+
+.container>.mobileBox {
+  width: 100%;
+  max-width: 640px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.mobileBox::-webkit-scrollbar {
+  display: none;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1s ease;
+}
+
+.fade-up.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 160px 0;
+}
+
+section .sectionTop h3 {
+  font-family: "Parisienne", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 36px;
+  text-align: center;
+  color: var(--lightTxt);
+}
+
+
+.main {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  z-index: 0;
+}
+
+.mainImg {
+  width: 100%;
+  position: relative;
+  top: -30px;
+  z-index: -1;
+}
+
+.envelopeCover {
+  width: 100%;
+  position: relative;
+  top: -120px;
+}
+
+.logo {
+  width: 50%;
+  object-fit: cover;
+  object-position: center;
+  margin-top: 64px;
+}
+
+.timeLocation {
+  display: flex;
+  flex-direction: column;
+  color: var(--txt);
+  opacity: 0.4;
+  font-size: 0.8em;
+  margin-top: 24px;
+  gap: 4px;
+}
+
+.timeLocation>span {
+  font-weight: 600;
+}
+
+
+/* Invitation */
+.invitation {
+  margin: 0px;
+}
+
+.txtBox {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.1em;
+  font-weight: 500;
+  color: var(--txt);
+}
+
+.pointTxt {
+  color: var(--pointColor2);
+}
+
+.mc {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.mcInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.mcInfo h1 {
+  font-size: 2em;
+  letter-spacing: 10%;
+  font-weight: 700;
+}
+
+button {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--txt);
+}
+
+
+button>img {
+  height: 12px;
+}
+
+.mc button {
+  padding: 8px 8px !important;
+}
+
+.accountItem button {
+  padding: 8px 8px !important;
+}
+
+
+.mcDes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mcParents {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.mcParentsName {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  letter-spacing: -0.5%;
+}
+
+.mcParents span {
+  font-size: 0.7em;
+}
+
+.mcParents b {
+  font-weight: 700;
+  font-size: 0.9em !important;
+}
+
+.btnBox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.heart>img {
+  width: 22px;
+  padding-top: 25px;
+}
+
+/* 웨딩데이 */
+#dday {
+  font-size: 1.4em;
+  line-height: 120%;
+  color: var(--pointColor1-txt);
+  background-color: var(--pointColor1-bg);
+  border: 1px solid var(--pointColor1);
+  width: 140px;
+  padding: 10px 0 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  letter-spacing: 5%;
+  margin-top: 12px;
+}
+
+.calendarSc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.calendarBox {
+  margin-top: 36px;
+  padding: 16px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  width: fit-content;
+  text-align: center;
+}
+
+th {
+  width: 44px;
+  height: 24px;
+  font-size: 0.8em;
+  color: var(--thrTxt);
+}
+
+th:first-child {
+  color: var(--pointColor1-txt);
+  opacity: 0.7;
+}
+
+td {
+  width: 44px;
+  height: 40px;
+  line-height: 40px;
+  color: var(--secTxt);
+  font-weight: 600;
+  font-size: 1em;
+  text-align: center;
+}
+
+td:first-child {
+  color: var(--pointColor1-txt);
+}
+
+.event {
+  color: var(--white);
+  font-weight: 800;
+}
+
+.event.heart {
+  width: 40px;
+  height: 40px;
+
+  background-image: url("../img/IoMdHeart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 44px;
+}
+
+
+/* 갤러리 */
+.gallerySc {
+  padding: 0 16px;
+}
+
+.gallery {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  touch-action: pan-y;
+  box-sizing: border-box;
+}
+
+.gallery-track {
+  display: flex;
+  transition: transform 0.35s ease;
+  will-change: transform;
+  width: 100%;
+}
+
+.gallery-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+  user-select: none;
+  width: 100%;
+}
+
+.gallery-slide img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  pointer-events: none;
+  user-drag: none;
+  -webkit-user-drag: none;
+}
+
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(24);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.gallery-btn img {
+  height: 16px !important;
+}
+
+.gallery-btn.prev {
+  left: 12px;
+}
+
+.gallery-btn.prev img {
+  transform: rotate(180deg);
+}
+
+.gallery-btn.next {
+  right: 12px;
+}
+
+.gallery-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  z-index: 10;
+}
+
+.gallery-dots button {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  padding: 0;
+}
+
+.gallery-dots button.active {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+  .gallery-slide img {}
+
+  .gallery-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+  }
+}
+
+/* 오시는길 */
+.map {
+  margin: 36px 0;
+  padding: 0 16px;
+  display: flex;
+  justify-content: center;
+}
+
+.map .map_border,
+.map .wrap_controllers.hide,
+.map .cont {
+  display: none;
+}
+
+.smallTxt {
+  font-size: 0.8em;
+}
+
+.line {
+  width: 32px;
+  height: 1px;
+  background-color: var(--border);
+  margin: 6px 0;
+}
+
+.address {
+  font-size: 0.8em;
+  color: var(--secTxt);
+  margin-bottom: 12px;
+}
+
+.way {
+  padding: 0 30px;
+}
+
+.way .title {
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+.way .des {
+  margin-top: 16px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.subwayColor {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #EFD94E;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.way hr {
+  height: 1px;
+  background-color: var(--border);
+  border: 0;
+  margin: 24px 0;
+}
+
+.wayBox {
+  position: relative;
+}
+
+.wayBox button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.wayBox .des b {
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.wayBox .des li {
+  list-style: disc;
+  margin-left: 24px;
+  line-height: 160%;
+}
+
+.wayBox .des li::marker {
+  font-size: 0.2em;
+}
+
+/* 계좌 */
+.accountInfoBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 275px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 32px;
+  padding: 16px 24px;
+}
+
+.sideToggle {
+  display: flex;
+  padding: 4px;
+  background: var(--grayBg);
+  border-radius: 40px;
+  width: fit-content;
+}
+
+.sideBtn {
+  flex: 1;
+  padding: 8px 0 10px 0;
+  width: 80px;
+  border: none;
+  border-radius: 30px;
+  background: transparent;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #8c8c8c;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sideBtn.active {
+  background: #ffffff;
+  color: #4a4a4a;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.listWrap {
+  position: relative;
+  min-height: 100px;
+  height: 100%;
+  /* 내용 높이에 맞게 조절 */
+  overflow: hidden;
+  width: 100%;
+}
+
+.accountList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.7s ease, opacity 0.7s ease;
+  margin-top: 30px;
+}
+
+/* 현재 보이는 상태 */
+.accountList.is-active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+  z-index: 2;
+}
+
+/* 신랑측 기본 대기 위치 */
+.groomList {
+  transform: translateX(-24px);
+}
+
+/* 신부측 기본 대기 위치 */
+.brideList {
+  transform: translateX(24px);
+}
+
+/* 사라질 때 방향 지정 */
+.accountList.exit-left {
+  opacity: 0;
+  transform: translateX(-24px);
+  z-index: 1;
+}
+
+.accountList.exit-right {
+  opacity: 0;
+  transform: translateX(24px);
+  z-index: 1;
+}
+
+.accountItem {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.accountItem:first-child {
+  padding-top: 0px;
+}
+
+.accountItem:last-child {
+  border: none;
+}
+
+.accountItem button span {
+  width: 12px;
+  text-align: center;
+  line-height: 12px;
+}
+
+.accountTxt {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.accountTxt .name {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.accountTxt .account {
+  color: var(--secTxt);
+  font-size: 0.8em;
+}
+
+/* last */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer>img {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.footer p {
+  line-height: 200%;
+  font-size: 0.9em;
+  color: var(--secTxt);
+  text-align: center;
+}
+
+.kakao {
+  width: fit-content;
+  margin-top: 60px;
+}
+
+.musicBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 9999;
+
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  border: none;
+
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 0.7em;
+  font-family: ;
+  cursor: pointer;
+
+  backdrop-filter: blur(6px);
+}
